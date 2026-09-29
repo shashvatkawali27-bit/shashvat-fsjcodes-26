@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+h1{
+    margin: 30px;
+}
+
+.home h1{
+    margin: 0px;
+}
+
+body {
+    font-family: Oswald,sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation */
+header {
+background-color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+nav h2 {
+    color: black;
+    font-size: 44px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 50px;
+    gap: 25px;
+}
+
+nav a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0;
+    height: 2px;
+    background: #1d0a95;
+    transition: width 0.3s ease;
+}
+
+
+nav a:hover {
+    color: #1d0a95;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+/* Sections */
+section {
+    padding: 70px 10%;
+    text-align: center;
+    min-height: 300px;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+/* Home */
+.home {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s")
+        no-repeat center/cover;
+    opacity: 0.4; 
+    z-index: -1;
+}
+
+.home h1 {
+    font-size: 40px;
+    color: black;
+}
+
+
+.home span {
+    color: #00bcd4;
+}
+
+.home p {
+    margin: 15px;
+    color: black;
+}
+
+.home button {
+    background-color: #8aa6aa;
+    height: 50px;
+    font-size: 1.5rem;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #8aa6aa;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0097a7;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background-color: white;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project {
+    background-color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+.project h2 {
+    margin-bottom: 10px;
+}
+
+/* contact */
+.contact-info {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact-info a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-info a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0;
+    height: 2px;
+    background: #1d0a95;
+    transition: width 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #1d0a95;
+}
+
+.contact-info a:hover::after {
+    width: 100%;
+}
+
+/* form */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100%;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+#contact h2{
+    margin-top: 40px;
+}
+
+#formMessage {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+}
