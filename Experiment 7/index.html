@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
+            <ul id="blue">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <h1>Hello, I'm <span>Shashvat Kawali 👋</span></h1>
+        <p>Welcome to my personal portfolio website.</p>
+        <button onclick="showMessage()">Explore My Work</button>
+        <p id="welcomeMessage"></p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        
+        <h1>About Me</h1>
+       
+        <p>
+            I am a Computer Engineering student with a strong interest in <strong>web development</strong>, <strong>programming</strong>, and <strong>software development</strong>. I enjoy learning new technologies, building practical projects, and creating useful solutions to real-world problems.
+            <br>
+        </p>
+        <p>
+            <br>
+        <strong>Degree:</strong> Bachelor's Degree in Computer Engineering
+        <br>
+        <strong>College:</strong> Rizvi College of Engineering
+        <br>
+        <strong>Year:</strong> 2026 - Present(2nd Year)
+    </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      
+        <h1>My Skills</h1>
+     
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C Programming</div>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">C++</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+   
+        <h1>My Projects</h1>
+      
+        <div class="projects-container">
+            <div class="project">
+                <h2>WorkoutBuddy</h2>
+                <p>An AI-based gym workout tracking and workout suggestion website.
+            It helps users track their exercises, follow workout routines,
+            and get suitable workout suggestions based on their goals.</p>
+            </div>
+
+            <div class="project">
+                <h2>CleanSpot</h2>
+                <p>A web-based platform for reporting and monitoring cleanliness
+            issues. Users can report problems at specific locations and
+            help improve cleanliness awareness in their surroundings..</p>
+            </div>
+
+            <div class="project">
+                <h2>Portfolio Website</h2>
+                <p>A personal portfolio website created using HTML, CSS and
+            JavaScript. It showcases my education, technical skills,
+            projects, and contact information in a simple and responsive
+            layout.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1> 
+        <div class="contact-info"> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shashvatkawali27@eng.rizvi.edu.in" target="_blank">Email</a> <a href="https://github.com/shashvatkawali27-bit" target="_blank">GitHub</a> <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a> </div>
+        <h3>Send Me a Message</h3>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <textarea id="message" placeholder="Enter your message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <p id="formMessage"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
