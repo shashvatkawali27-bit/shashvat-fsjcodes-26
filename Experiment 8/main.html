@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 350px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #result {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <h2>Email Validator</h2>
+
+    <input type="text" id="email" placeholder="Enter your email">
+
+    <br>
+
+    <button onclick="validateEmail()">Validate</button>
+
+    <div id="result">--</div>
+
+</div>
+
+<script>
+    function validateEmail() {
+        const emailEle = document.querySelector("#email");
+        let email = emailEle.value;
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        const resultEle = document.querySelector("#result");
+
+        if (emailRegex.test(email)) {
+            resultEle.innerText = "Valid Email";
+        }
+        else {
+            resultEle.innerText = "Invalid Email";
+        }
+    }
+</script>
+
+
+</body>
+
+</html>
