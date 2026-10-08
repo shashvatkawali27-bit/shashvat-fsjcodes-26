@@ -1,0 +1,86 @@
+/* Base Body Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.4s ease; /* Smooth background fade transition */
+  background-color: #f8f9fa; /* Default clean light gray */
+}
+
+/* Global Body Background Variations */
+body.bg-red { background-color: #ff4d6d; }
+body.bg-blue { background-color: #0077b6; }
+body.bg-yellow { background-color: #ffb703; }
+body.bg-green { background-color: #2a9d8f; }
+
+/* Main Container Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Translucent white card */
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  max-width: 450px;
+  width: 100%;
+}
+
+/* Header Adjustments */
+.header-box h1 {
+  color: #2b2d42;
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.color-name {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+/* Button Cluster Setup */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Reusable Button Defaults */
+.btn {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Individual Button Theme Layouts */
+.btn-red { background-color: #ff4d6d; color: white; }
+.btn-red:hover { background-color: #c9184a; }
+
+.btn-blue { background-color: #0077b6; color: white; }
+.btn-blue:hover { background-color: #03045e; }
+
+.btn-yellow { background-color: #ffb703; color: #212529; }
+.btn-yellow:hover { background-color: #fb8500; }
+
+.btn-green { background-color: #2a9d8f; color: white; }
+.btn-green:hover { background-color: #1e7166; }
